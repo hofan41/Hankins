@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "A prettier and more organized front end to continuous integration systems.",
   "main": "index.js",
+  "engines": {
+    "npm" : "2.5.x",
+    "node" : "0.12.x"
+  },
   "scripts": {
     "test": "grunt"
   },
