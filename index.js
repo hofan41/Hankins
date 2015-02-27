@@ -7,14 +7,14 @@ MongoClient.connect(process.env.HANKINS_MONGODB_URI, function(err, db) {
   if(err) {
     throw err;
   } else {
-    console.log("Connected to mongodb successfully!");
+    console.log('Hankins connected to mongodb successfully!');
   }
 });
 
 var server = new Hapi.Server();
 
 server.connection({
-  port: Number(process.env.PORT)
+  port: Number(process.env.PORT || 8080)
 });
 
 server.route({
