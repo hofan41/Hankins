@@ -14,7 +14,7 @@ MongoClient.connect(process.env.HANKINS_MONGODB_URI, function(err, db) {
 var server = new Hapi.Server();
 
 server.connection({
-  port: Number(process.argv[2] || 8080)
+  port: 80
 });
 
 server.route({
