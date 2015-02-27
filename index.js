@@ -7,7 +7,7 @@ MongoClient.connect(process.env.HANKINS_MONGODB_URI, function(err, db) {
   if(err) {
     throw err;
   } else {
-    console.log('Hankins connected to mongodb successfully!');
+    console.log("Hankins connected to mongodb successfully!");
   }
 });
 
